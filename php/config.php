@@ -1,6 +1,6 @@
 <?php
 
-define("MYSQL_HOST", "fdb20.freehostingeu.com");
-define("MYSQL_DBNAME", "2753441_moviefy");
-define("MYSQL_USERNAME", "2753441_moviefy");
-define("MYSQL_PASSWORD", "pavlepavle23");
+define("MYSQL_HOST", "");
+define("MYSQL_DBNAME", "");
+define("MYSQL_USERNAME", "");
+define("MYSQL_PASSWORD", "");
