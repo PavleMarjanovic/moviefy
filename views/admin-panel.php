@@ -111,6 +111,16 @@ if(isset($_POST['deleteUser']))
 
     echo "<div class='alert alert-success' role='alert'><strong>SUCCESS</strong> You have successfully deleted a movie!</div>";
 }
+if(isset($_POST['deleteSlider']))
+{
+    $sliderDelete = $_POST['sliderDelete'];
+    $upitDeleteSlider = "DELETE FROM slider WHERE id_slider = :id_slider";
+    $stmtDeleteSlider = $konekcija->prepare($upitDeleteSlider);
+    $stmtDeleteSlider->bindParam(":id_slider", $sliderDelete);
+    $stmtDeleteSlider->execute();
+
+    echo "<div class='alert alert-success' role='alert'><strong>SUCCESS</strong> You have successfully deleted a slider!</div>";
+}
 if(isset($_POST['update']))
 {
     $changeMovie = $_POST['changeMovie'];
